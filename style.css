@@ -4,7 +4,7 @@ html{
 
 .header{
 height: 88px;
-width: 320px;
+width: 100%;
 background: #fff;
 display: flex;
 align-items: center;
@@ -21,6 +21,8 @@ margin-left: 16px;
 
 
 .header__center-menu{
+    position: absolute;
+    left: 72px
 }
 
 
@@ -50,7 +52,7 @@ bottom: 4px;
 
 .main{
     background-color: #f8f8f8;
-    width: 320px;
+    width: 100%;
 }
 
 
@@ -84,7 +86,7 @@ line-height: 24px;
 font-weight: 500;
 }
 .intro__img{
-    width: 320px;
+    width: 100%;
     display: block;
 }
 
