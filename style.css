@@ -1,41 +1,81 @@
 
-
+*{
+    /* border: .2px solid; */
+}
 .header{
-    height: 88px;
+height: 88px;
 width: 320px;
-background: #e3e3e3;
+background: #fff;
 display: flex;
-justify-content: space-evenly;
 align-items: center;
+justify-content: space-between;
 }
-.header-icons{
-/* background-color: blue; */
-}
-/* svg{
-    display: block;
-} */
 
+
+.header__left-menu{
+margin-left: 16px;
+}
 .header__burger-icon{
+    display: block;
 }
 
-.header__logo{
-    /* background-color: blue; */
-  
+
+.header__center-menu{
 }
-/* .header__logo-img{
-display: block;
-} */
-/* .header__logo--marker::after{
-content: '';
-border: 1px solid #000;
-width: 2px;
-height: 32px;
-display: inline-block;
-position: absolute;
-} */
+
+
+.header__right-menu{
+    width: 118px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__right-menu::before{
+    content: '';
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background-color: #eaeaea;
+    position: relative;
+top: 4px;
+bottom: 4px;
+}
+.header__repair-icon{
+
+}
+.header__checkstatus-icon{
+
+}
+
+.main{
+    background-color: #f8f8f8;
+}
+
+
+
+
+.intro__title{
+margin: 0;
+}
+
+
+
+
+
+
 
 .header__repair-icon{
-margin-right: ;
+/* margin-right: ; */
 }
 .header__checkstatus-icon {
+
 } 
+
+
+/* .intro__title{
+font-size: 28px;
+line-height: 40px;
+    padding-top: 24px;
+    padding-left: 16px;
+} */
