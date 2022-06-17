@@ -54,6 +54,8 @@ html{
     padding:24px 16px;
     font-size: 28px;
     line-height: 40px;
+    color: #1B1C21;
+    ;
 }
 .page-nav{
     position: relative;
@@ -89,68 +91,69 @@ html{
 }
 .page-nav__list-item{
     display: inline-block;
-    line-height: 24px;
-    padding: 8px 16px;
+}
+
+.page-nav__list-link{
     font-size: 16px;
+    display: block;
+    margin: 8px 16px;
+    line-height: 24px;
+    text-decoration: none;
     font-weight: medium;
     letter-spacing: 1.25px;
+    color: #7E7E82;
 }
+
 .page-nav__list-item:first-child{
     margin-left: 16px;
 }
-.page-nav__list-item--active{
+
+.page-nav__list-link--active{
+
+}
+.page-nav__list-link--active{
+    margin: 0;
+    padding: 8px 16px ;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #fff;
 }
 
 
-.arcticle-from-intro{
+.intro__about-us{
     padding-bottom: 16px;
 }
-.arcticle-from-intro__text{
+.intro__text{
     margin: 24px 16px;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-
+color: #1B1C21
 }
-.arcticle-from-intro__cont-read{
+.intro__cont-read{
     display: flex;
     align-items: center;
-    /* background-color: red; */
-    /* height: 24px; */
+
 }
-.arcticle-from-intro__link-marker{
+.intro__link-marker{
     margin-left: 16px;
     margin-right: 8px;
     display: inline-block;
 }
-.arcticle-from-intro__link-title{
-    margin: 0;
-
+.intro__link-title{
+text-decoration: none;
     display: inline-block;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+    color: #1B1C21;
 }
 
 .intro__img{
     width: 100%;
     display: block;
     padding-bottom: 35px;
+    border-radius:6px ;
 }
 
-.header__repair-icon{
-   /* margin-right: ;
-    */
-}
-.header__checkstatus-icon {
-}
-/* .intro__title{
-    font-size: 28px;
-    line-height: 40px;
-    padding-top: 24px;
-    padding-left: 16px;
-}
-*/
+
