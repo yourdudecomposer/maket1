@@ -47,8 +47,6 @@ html{
 .main{
     background-color: #f8f8f8;
     width: 100%;
-    display: block;
-    position: relative;
 }
 
 .title{
@@ -68,16 +66,18 @@ html{
     position: absolute;
     right: 0;
     top: 0;
-    background: linear-gradient(to right, transparent, #fff);
+    background: linear-gradient(to right, transparent, #f8f8f8);
 }
 .page-nav::before{
     content: '';
-    height: 40px;
+    height: 44px;
     width: 24px;
+
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(to left, transparent 33%, #fff);
+    /* border: .1px solid; */
+    background: linear-gradient(to left, transparent 33%, #f8f8f8);
 }
 .page-nav__list{
     list-style: none;
@@ -93,7 +93,7 @@ html{
     padding: 8px 16px;
     font-size: 16px;
     font-weight: medium;
-    letter-spacing: 1.45px;
+    letter-spacing: 1.25px;
 }
 .page-nav__list-item:first-child{
     margin-left: 16px;
@@ -106,19 +106,29 @@ html{
 
 
 .arcticle-from-intro{
+    padding-bottom: 16px;
 }
 .arcticle-from-intro__text{
+    margin: 24px 16px;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
+
 }
 .arcticle-from-intro__cont-read{
-    height: 24px;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    /* height: 24px; */
 }
 .arcticle-from-intro__link-marker{
+    margin-left: 16px;
+    margin-right: 8px;
     display: inline-block;
 }
 .arcticle-from-intro__link-title{
+    margin: 0;
+
     display: inline-block;
     font-size: 16px;
     line-height: 24px;
@@ -128,6 +138,7 @@ html{
 .intro__img{
     width: 100%;
     display: block;
+    padding-bottom: 35px;
 }
 
 .header__repair-icon{
