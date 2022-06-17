@@ -44,6 +44,7 @@ html{
 }
 
 
+
 .main{
     background-color: #f8f8f8;
     width: 100%;
@@ -55,8 +56,9 @@ html{
     font-size: 28px;
     line-height: 40px;
     color: #1B1C21;
-    ;
+    
 }
+
 .page-nav{
     position: relative;
     height: 40px;
@@ -78,7 +80,6 @@ html{
     position: absolute;
     left: 0;
     top: 0;
-    /* border: .1px solid; */
     background: linear-gradient(to left, transparent 33%, #f8f8f8);
 }
 .page-nav__list{
@@ -109,9 +110,6 @@ html{
 }
 
 .page-nav__list-link--active{
-
-}
-.page-nav__list-link--active{
     margin: 0;
     padding: 8px 16px ;
     border: 2px solid #B8FFEC;
@@ -119,17 +117,61 @@ html{
     background-color: #fff;
 }
 
+.intro__down-wrapper{
+display: flex;
+flex-direction: column;
+}
+@media (min-width: 768px) { 
+    .intro__down-wrapper{
+        display: flex;
+        flex-direction: row;
+        }
+}
 
 .intro__about-us{
     padding-bottom: 16px;
 }
 .intro__text{
-    margin: 24px 16px;
+    padding: 24px 16px;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-color: #1B1C21
+    color: #1B1C21
 }
+@media (min-width: 768px) { 
+    .intro__text{
+        padding: 32px 24px;
+        padding-bottom: 10px;
+    }
+
+}
+
+.intro__text--screen-s{
+    margin: 0;
+}
+
+
+.intro__text--screen-m{
+display: none;
+}
+@media (min-width: 1120px) { 
+    .intro__text--screen-m{
+        display: inline;
+    }
+}
+
+.intro__text--screen-l{
+display: none;
+}
+@media (min-width: 768px) { 
+    .intro__text--screen-l{
+        display: block;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+}
+
+
 .intro__cont-read{
     display: flex;
     align-items: center;
@@ -140,7 +182,15 @@ color: #1B1C21
     margin-right: 8px;
     display: inline-block;
 }
+@media (min-width: 768px) { 
+    .intro__link-marker{
+        margin-left: 25px;
+   
+    }
+}
+
 .intro__link-title{
+    margin: 0;
 text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -149,11 +199,23 @@ text-decoration: none;
     color: #1B1C21;
 }
 
+@media (min-width: 768px) { 
+
+}
 .intro__img{
     width: 100%;
-    display: block;
     padding-bottom: 35px;
     border-radius:6px ;
+}
+@media (min-width: 768px) { 
+    .intro__img{
+       padding: 40px 25px;
+       padding-left: 48px;
+        border-radius:6px ;
+        width: 360px;
+        height: 208px;
+    }
+
 }
 
 
