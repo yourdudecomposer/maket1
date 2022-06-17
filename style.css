@@ -1,41 +1,37 @@
 html{
     font-family: 'TT Lakes';
 }
-
-*{
+/* *{
     border: .1px solid;
-}
-.header{
-height: 88px;
-width: 100%;
-background: #fff;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
+} */
 
+
+.header{
+    height: 88px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9FFF5;
+}
 
 .header__left-menu{
-margin-left: 16px;
+    margin-left: 16px;
 }
 .header__burger-icon{
     display: block;
 }
-
-
-.header__center-menu{
+.header__logo{
     position: absolute;
-    left: 72px
+    left: 72px 
 }
-
-
 .header__right-menu{
     width: 118px;
     margin-right: 16px;
     display: flex;
     justify-content: space-between;
 }
-
 .header__right-menu::before{
     content: '';
     width: 2px;
@@ -43,17 +39,10 @@ margin-left: 16px;
     border-radius: 1px;
     background-color: #eaeaea;
     position: relative;
-top: 4px;
-bottom: 4px;
+    top: 4px;
+    bottom: 4px;
 }
 
-
-.header__repair-icon{
-
-}
-.header__checkstatus-icon{
-
-}
 
 .main{
     background-color: #f8f8f8;
@@ -62,65 +51,54 @@ bottom: 4px;
     position: relative;
 }
 
-
-
-
-.intro__title{
-margin:24px 16px;
-font-size: 28px;
-line-height: 40px;
+.title{
+    margin: 0;
+    padding:24px 16px;
+    font-size: 28px;
+    line-height: 40px;
 }
-
-
-
-.intro__nav{
+.page-nav{
     position: relative;
     height: 40px;
 }
-.intro__nav::after{
-content: '';
-height: 40px;
-width: 12px;
-position: absolute;
-right: 0;
-top: 0;
-    background: linear-gradient(to right, transparent, #fff);
-    
-}
-
-.intro__nav::before{
+.page-nav::after{
     content: '';
     height: 40px;
-    width: 12px;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right, transparent, #fff);
+}
+.page-nav::before{
+    content: '';
+    height: 40px;
+    width: 24px;
     position: absolute;
     left: 0;
     top: 0;
-        background: linear-gradient(to left, transparent, #fff);
-        
-    }
-.intro__list{
-list-style: none;
-white-space: nowrap;
-overflow: scroll;
-margin: 0;
-/* margin-left: 16px; */
-padding: 0;
-background: linear-gradient(to right,transparent 87.5%,  #fff 100%);
+    background: linear-gradient(to left, transparent 33%, #fff);
 }
+.page-nav__list{
+    list-style: none;
+    white-space: nowrap;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
 
-.intro__list-item{
+}
+.page-nav__list-item{
     display: inline-block;
     line-height: 24px;
     padding: 8px 16px;
     font-size: 16px;
     font-weight: medium;
-    letter-spacing: 1.7px;
-
+    letter-spacing: 1.45px;
 }
-.intro__list-item:first-child{
-margin-left: 16px;
+.page-nav__list-item:first-child{
+    margin-left: 16px;
 }
-.intro__list-item--active{
+.page-nav__list-item--active{
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #fff;
@@ -128,45 +106,40 @@ margin-left: 16px;
 
 
 .arcticle-from-intro{
-
 }
 .arcticle-from-intro__text{
-font-size: 14px;
-line-height: 18px;
-font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
 }
-
 .arcticle-from-intro__cont-read{
     height: 24px;
 }
 .arcticle-from-intro__link-marker{
-display: inline-block;
+    display: inline-block;
 }
 .arcticle-from-intro__link-title{
     display: inline-block;
-font-size: 16px;
-line-height: 24px;
-font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
 }
+
 .intro__img{
     width: 100%;
     display: block;
 }
 
-
-
-
 .header__repair-icon{
-/* margin-right: ; */
+   /* margin-right: ;
+    */
 }
 .header__checkstatus-icon {
-
-} 
-
-
+}
 /* .intro__title{
-font-size: 28px;
-line-height: 40px;
+    font-size: 28px;
+    line-height: 40px;
     padding-top: 24px;
     padding-left: 16px;
-} */
+}
+*/
