@@ -357,7 +357,7 @@ display: none;
 }
 @media (min-width: 1120px) { 
     .intro__link-marker{
-        margin-left: 32px;
+        margin-left: 40px;
    
     }
 }
@@ -389,7 +389,7 @@ text-decoration: none;
 }
 @media (min-width: 1120px) { 
     .intro__img{
-       padding: 32px 25px 40px 0;
+       padding: 2px 25px 40px 0;
         border-radius:6px ;
         width: 531px;
         height: 307px;
