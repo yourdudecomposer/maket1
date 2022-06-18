@@ -52,7 +52,8 @@ html{
 
 .title{
     margin: 0;
-    padding:24px 16px;
+    padding:24px 16px 20px 16px;
+
     font-size: 28px;
     line-height: 40px;
     color: #1B1C21;
@@ -62,10 +63,14 @@ html{
 .page-nav{
     position: relative;
     height: 40px;
+    padding: 4px 0;
+display: flex;
+align-items: center;
 }
 .page-nav::after{
     content: '';
-    height: 40px;
+    
+    height: 48px;
     width: 24px;
     position: absolute;
     right: 0;
@@ -74,7 +79,7 @@ html{
 }
 .page-nav::before{
     content: '';
-    height: 44px;
+    height: 48px;
     width: 24px;
 
     position: absolute;
@@ -82,22 +87,28 @@ html{
     top: 0;
     background: linear-gradient(to left, transparent 33%, #f8f8f8);
 }
+
+
+
 .page-nav__list{
     list-style: none;
     white-space: nowrap;
-    overflow: scroll;
     margin: 0;
-    padding: 0;
+    padding:4px 0;
+height: 40px;
+overflow: scroll;
+
 
 }
 .page-nav__list-item{
     display: inline-block;
+
 }
 
 .page-nav__list-link{
     font-size: 16px;
     display: block;
-    margin: 8px 16px;
+    margin: 6px 16px;
     line-height: 24px;
     text-decoration: none;
     font-weight: medium;
@@ -111,7 +122,10 @@ html{
 
 .page-nav__list-link--active{
     margin: 0;
-    padding: 8px 16px ;
+    padding: 6px 16px ;
+
+}
+.page-nav__list-item--active{
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #fff;
@@ -132,7 +146,7 @@ flex-direction: column;
     padding-bottom: 16px;
 }
 .intro__text{
-    padding: 24px 16px;
+    padding: 20px 16px 16px 16px;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
