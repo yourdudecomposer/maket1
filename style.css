@@ -13,7 +13,6 @@ html {
 		align-items: end;
 		height: 82px;
 		background-color: #f8f8f8;
-		/* border: .1px solid; */
 	}
 }
 
@@ -70,6 +69,13 @@ html {
 	justify-content: space-between;
 }
 
+@media (min-width:768px) {
+	.header__right-menu {
+		margin-right: 24px;
+	}
+
+}
+
 @media (min-width:1120px) {
 	.header__right-menu {
 		align-items: end;
@@ -80,7 +86,6 @@ html {
 
 }
 
-@media (min-width:1120px) {}
 
 .header__right-menu::before {
 	content: '';
@@ -142,12 +147,27 @@ html {
 	}
 }
 
-@media (min-width:1120px) {
-	.header__checkstatus-icon-text {}
+.header__three-icons {
+	display: none;
+}
+
+@media (min-width:768px) {
+	.header__three-icons {
+		display: block;
+		position: absolute;
+		right: 162px;
+	}
 }
 
 @media (min-width:1120px) {
-	.header__repair-icon-text {}
+	.header__three-icons {
+		display: none;
+	}
+
+}
+
+.header__three-icons-item {
+	margin-left: 16px;
 }
 
 .main {
@@ -157,26 +177,27 @@ html {
 
 .title-container::before {
 	content: '';
-    width: 8px;
-    height: 40px;
-    background: #41F6D7;
-    position: absolute;
-    border-radius: 4px;
-    left: -4px;
-    top: 24px;
+	width: 8px;
+	height: 40px;
+	background: #41F6D7;
+	position: absolute;
+	border-radius: 4px;
+	left: -4px;
+	top: 24px;
 }
 
 @media (min-width:1120px) {
-    .title-container::before {
-top: 0;
-    }
+	.title-container::before {
+		top: 0;
+	}
 
 
 }
 
 .title-container {
-    position: relative;
+	position: relative;
 }
+
 @media (min-width:1120px) {
 	.title-container {
 		order: -1;
@@ -277,12 +298,6 @@ top: 0;
 
 }
 
-@media (min-width: 1120px) {
-	.page-nav__list-item {
-		/* padding-left: 24px; */
-	}
-
-}
 
 .page-nav__list-link {
 	font-size: 16px;
@@ -297,6 +312,13 @@ top: 0;
 
 .page-nav__list-item:first-child {
 	margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+	.page-nav__list-item:first-child {
+		margin-left: 24px;
+	}
+
 }
 
 @media (min-width: 1120px) {
@@ -428,13 +450,13 @@ top: 0;
 
 .intro__img {
 	width: 100%;
-	padding-bottom: 35px;
+	margin-bottom: 35px;
 	border-radius: 6px;
 }
 
 @media (min-width: 768px) {
 	.intro__img {
-		padding: 32px 25px 40px 24px;
+		margin: 32px 25px 40px 24px;
 		width: 360px;
 		height: 208px;
 	}
@@ -443,7 +465,7 @@ top: 0;
 
 @media (min-width: 1120px) {
 	.intro__img {
-		padding: 2px 25px 40px 0;
+		margin: 2px 25px 40px 0;
 		border-radius: 6px;
 		width: 531px;
 		height: 307px;
